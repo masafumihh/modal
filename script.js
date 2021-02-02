@@ -36,12 +36,14 @@
         if (modal == null) return;
         modal.classList.add('active');
         overlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
     }
 
     function closeModal(modal) {
         if (modal == null) return;
         modal.classList.remove('active');
         overlay.classList.remove('active');
+        document.body.style.overflow = 'scroll';
     }
 
     function closeAccountModal(modal) {
